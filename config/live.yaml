@@ -1,0 +1,22 @@
+# Live Trading Configuration
+# 实盘交易配置文件
+
+# 网关设置
+gateway:
+  type: "vnpy"  # vnpy, vnpy_ctp, vnpy_xtp
+  broker_id: ""
+  investor_id: ""
+  password: ""
+  td_address: ""  # 交易服务器地址
+  md_address: ""  # 行情服务器地址
+
+# 交易设置
+trading:
+  strategy_name: ""
+  symbols: []  # 交易标的
+  max_position: 0.1  # 单只股票最大仓位比例
+
+# 风控设置
+risk:
+  max_loss_per_day: 0.02  # 每日最大亏损比例
+  max_total_loss: 0.1     # 总最大亏损比例

@@ -1,0 +1,25 @@
+# Backtest Configuration
+# 回测配置文件
+
+# 回测区间
+backtest:
+  start_date: "20200101"
+  end_date: "20231231"
+  initial_cash: 1000000  # 初始资金
+
+# 市场设置
+market:
+  stock_pool: []  # 空列表表示全市场，或指定: ["sz000001", "sh600000"]
+  benchmark: "sh000001"  # 基准指数
+
+# 交易设置
+trading:
+  commission: 0.0003  # 手续费率 (万3)
+  slippage: 0.0001    # 滑点 (万1)
+  min_volume: 100     # 最小交易量
+
+# 输出设置
+output:
+  result_dir: "results"
+  save_trades: true
+  save_equity: true

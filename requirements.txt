@@ -1,0 +1,11 @@
+hikyuu
+tushare
+akshare
+pyyaml
+loguru
+pytest
+pandas
+numpy
+ta-lib
+python-dotenv
+click
